@@ -1,0 +1,51 @@
+<div class="row calendar-day">
+  <div class="col-1">
+    <div class="card text-center">
+      <div class="card-block">
+        <h4 class="card-title">{{day}}</h4>
+      </div>
+      <div class="card-footer text-muted">
+        {{month}}
+      </div>
+    </div>
+  </div>
+  <div class="col facebook">
+    <div class="row">
+      <div class="col">
+        Facebook
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <app-social-card *ngFor="let card of cards" [title]="card.title" [message]="card.message" [date]="card.date"
+                         [image]="card.image"></app-social-card>
+      </div>
+    </div>
+  </div>
+  <div class="col twitter">
+    <div class="row">
+      <div class="col">
+        Facebook
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <app-social-card *ngFor="let card of cards" [title]="card.title" [message]="card.message" [date]="card.date"
+                         [image]="card.image"></app-social-card>
+      </div>
+    </div>
+  </div>
+  <div class="col instagram">
+    <div class="row">
+      <div class="col">
+        Facebook
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <app-social-card *ngFor="let card of cards" [title]="card.title" [message]="card.message" [date]="card.date"
+                         [image]="card.image"></app-social-card>
+      </div>
+    </div>
+  </div>
+</div>
