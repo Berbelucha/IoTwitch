@@ -9,15 +9,21 @@
   }
 
   .facebook {
-    background-color: transparentize(blue, 0.4);
-    box-shadow: 0 2px 5px transparentize(blue, 0.4);
+    .timeline-title {
+      background-color: transparentize(blue, 0.4);
+      box-shadow: 0 2px 5px transparentize(blue, 0.4);
+    }
   }
   .twitter {
-    background-color: transparentize(purple, 0.4);
-    box-shadow: 0 2px 5px transparentize(purple, 0.4);
+    .timeline-title {
+      background-color: transparentize(purple, 0.4);
+      box-shadow: 0 2px 5px transparentize(purple, 0.4);
+    }
   }
   .instagram {
-    background-color: transparentize(red, 0.4);
-    box-shadow: 0 2px 5px transparentize(red, 0.4);
+    .timeline-title {
+      background-color: transparentize(red, 0.4);
+      box-shadow: 0 2px 5px transparentize(red, 0.4);
+    }
   }
 }

@@ -1,0 +1,10 @@
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      color: green;
+      &.not-logged-in {
+        color: red;
+      }
+    }
+  }
+}
