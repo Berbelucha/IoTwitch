@@ -1,19 +1,18 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="#">IoTwitch <span class="socicon socicon-twitch"></span> </a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link socicon socicon-twitch" [ngClass]="{'not-logged-in': !loggedIn.twitch}" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link socicon socicon-facebook" [ngClass]="{'not-logged-in': !loggedIn.facebook}" (click)="loginWithFacebook()" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link socicon socicon-instagram" [ngClass]="{'not-logged-in': !loggedIn.instagram}" href="#"></a>
+        <a class="nav-link" href="#">
+          <span class="stream-status">
+            <span class="icon"></span>
+            <span>ONLINE</span>
+          </span>
+        </a>
       </li>
     </ul>
   </div>

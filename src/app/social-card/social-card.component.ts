@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SocialCardComponent implements OnInit {
 
+  @Input() platform;
   @Input() title;
   @Input() message;
   @Input() date;

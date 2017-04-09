@@ -1,4 +1,40 @@
-.social-columns {
-  color: white;
-  margin-bottom: 10px;
+$year-indicator-spacer: calc(50vh - 98px);
+$year-indicator-margin: 63px;
+.calendar {
+  .year {
+    position: fixed;
+    left: 0;
+    text-align: center;
+    width: 100px;
+    top: 50%;
+    font-size: 36px;
+    color: #eee;
+    line-height: 0;
+  }
+  &:after {
+    content: "";
+    position: fixed;
+    left: 50px;
+    width: 1px;
+    height: $year-indicator-spacer;
+    bottom: $year-indicator-margin;
+    background-color: #eee;
+    z-index: -1;
+  }
+  &:before {
+    content: "";
+    position: fixed;
+    left: 50px;
+    width: 1px;
+    top: $year-indicator-margin;
+    height: $year-indicator-spacer;
+    background-color: #eee;
+    z-index: -1;
+  }
+  .posts {
+    min-height: 240px;
+  }
+}
+app-day {
+  width: 100%;
 }

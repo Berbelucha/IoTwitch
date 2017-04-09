@@ -1,29 +1,31 @@
-.calendar-day {
-  border-bottom: 1px solid #CCC;
-  box-shadow: 0 2px 4px #EEE;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  .card-title {
-    color: #303030;
-    line-height: 30px;
-  }
-
-  .facebook {
-    .timeline-title {
-      background-color: transparentize(blue, 0.4);
-      box-shadow: 0 2px 5px transparentize(blue, 0.4);
+.days {
+  margin-top: 30px;
+  .day {
+    width: 64px;
+    position: absolute;
+    left: 50px;
+    margin-left: -31px;
+    background-color: white;
+    text-align: center;
+    .number {
+      width: 64px;
+      height: 64px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      line-height: 64px;
+      color: #303030;
+      font-size: 42px;
+    }
+    .month {
+      width: 64px;
+      height: 24px;
+      background-color: #303030;
+      color: white;
+      font-size: 16px;
     }
   }
-  .twitter {
-    .timeline-title {
-      background-color: transparentize(purple, 0.4);
-      box-shadow: 0 2px 5px transparentize(purple, 0.4);
-    }
-  }
-  .instagram {
-    .timeline-title {
-      background-color: transparentize(red, 0.4);
-      box-shadow: 0 2px 5px transparentize(red, 0.4);
-    }
-  }
+}
+.posts {
+  margin-top: 30px;
 }

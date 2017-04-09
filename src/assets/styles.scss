@@ -1,0 +1,40 @@
+@import "_variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  background-color: #151515;
+  height: 48px;
+  .navbar-brand {
+    font-family: $font-dimitri;
+  }
+}
+
+.social-icon {
+  display: block;
+  float: left;
+  margin: 6px;
+  &.facebook {
+    &.offline {
+      @include social_icon('facebook');
+    }
+    &.online {
+      @include social_icon('facebook', 'on');
+    }
+  }
+  &.twitch {
+    &.offline {
+      @include social_icon('twitch');
+    }
+    &.online {
+      @include social_icon('twitch', 'on');
+    }
+  }
+  &.instagram {
+    &.offline {
+      @include social_icon('instagram');
+    }
+    &.online {
+      @include social_icon('instagram', 'on');
+    }
+  }
+}

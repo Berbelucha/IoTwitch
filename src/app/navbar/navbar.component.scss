@@ -1,10 +1,18 @@
-.navbar-nav {
-  .nav-item {
-    .nav-link {
-      color: green;
-      &.not-logged-in {
-        color: red;
-      }
+.navbar {
+  .navbar-brand{
+    max-width: 50%;
+  }
+  .stream-status {
+    display: block;
+    color: white;
+    .icon {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      background-color: #00bb00;
+      box-shadow: 0 0 10px #00ff00;
+      margin-right: 5px;
     }
   }
 }

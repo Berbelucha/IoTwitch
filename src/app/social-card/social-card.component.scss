@@ -1,3 +1,18 @@
-.card {
-  margin-bottom: 10px;
+.platform {
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  &.Facebook {
+    background-color: #3b5998;
+  }
+  &.Twitch {
+    background-color: #6441A4;
+  }
+  &.Instagram {
+    background: linear-gradient(145deg, #f9ed32 0%, #b900b4 40%, #f50000 60%, #1400c8 100%) no-repeat;
+  }
+}
+
+.content {
+  padding: 10px;
 }

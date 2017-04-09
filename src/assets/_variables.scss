@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Dimitri';
+  src:  url('fonts/Dimitri.ttf.woff') format('woff'),
+  url('fonts/Dimitri.ttf.svg#Dimitri') format('svg'),
+  url('fonts/Dimitri.ttf.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amaranth';
+  src:  url('fonts/Amaranth.ttf.eot') format('woff'),
+  url('fonts/Amaranth.ttf.svg#Dimitri') format('svg'),
+  url('fonts/Amaranth.ttf.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-dimitri: 'Dimitri';
+$font-amaranth: 'Amaranth';
+$font-family-base: $font-amaranth;
+
+$navbar-border-radius: 0;
+//$navbar-light-color: white;
+
+@mixin social_icon($platform, $state: 'off') {
+  background-image: url('images/social_' + $platform + '_' + $state + '.png');
+  width: 36px;
+  height: 36px;
+}
+
+$card-border-radius: 0;
