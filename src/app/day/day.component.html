@@ -8,9 +8,9 @@
     </div>
     <div class="col-11 posts">
       <div class="row">
-        <div class="col-4" *ngFor="let card of cards">
-          <app-social-card [title]="card.title" [message]="card.message" [date]="card.date"
-                           [image]="card.image" [platform]="card.platform"></app-social-card>
+        <div class="col-3" *ngFor="let card of cards">
+          <app-social-card [message]="card.message" [date]="card.date"
+                           [image]="card.full_picture" [platform]="card.platform"></app-social-card>
         </div>
       </div>
     </div>

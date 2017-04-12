@@ -12,6 +12,8 @@ import { SocialCardComponent } from './social-card/social-card.component';
 import { FooterComponent } from './footer/footer.component';
 import {DayComponent} from './day/day.component';
 import {SocialApiService} from './social-api.service';
+import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {path: '', component: CalendarComponent}
@@ -24,16 +26,19 @@ const routes: Routes = [
     CalendarComponent,
     SocialCardComponent,
     FooterComponent,
-    DayComponent
+    DayComponent,
+    ConfirmationModalComponent
   ],
   providers: [SocialApiService],
   bootstrap: [AppComponent],
+  entryComponents: [ConfirmationModalComponent],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
     FormsModule,
     HttpModule,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    NgbModule.forRoot()
   ]
 })
 export class AppModule { }
